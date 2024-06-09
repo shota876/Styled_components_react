@@ -38,7 +38,7 @@ const Button = styled.button`
   border: 2px solid white;
   cursor: pointer;
   color: white;
-  padding: 10px 10px;
+  padding: 10px 20px;
   border-radius: 10px;
   &:hover{
     background-color: aliceblue;
@@ -47,9 +47,24 @@ const Button = styled.button`
   }
 `
 
-const Left = styled.div``;
-const Center = styled.div``;
-const Right = styled.div``;
+const Left = styled.div`
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+  align-items: center;
+`;
+const Center = styled.div`
+  display: flex;
+  flex: 2;
+`;
+const Right = styled.div`
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+
 
 function Navbar() {
   return (
