@@ -1,7 +1,6 @@
 import Navbar from "./components/navbar/Navbar.jsx"
 import styled from 'styled-components'
 import {createGlobalStyle} from "styled-components"
-import {ThemeProvider} from 'styled-components'
 
 const GlobalStyles = createGlobalStyle`
   body{
