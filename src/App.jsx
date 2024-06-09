@@ -1,6 +1,7 @@
 import Navbar from "./components/navbar/Navbar.jsx"
 import styled from 'styled-components'
 import {createGlobalStyle} from "styled-components"
+import Hero from "./components/Hero/Hero.jsx"
 
 const GlobalStyles = createGlobalStyle`
   body{
@@ -23,6 +24,7 @@ function App() {
       <GlobalStyles />
       <Container>
         <Navbar />
+        <Hero />
       </Container>
     </>
   )
