@@ -8,7 +8,7 @@ const Container = styled.div`
 `;
 const Left = styled.div`
   width: 60%;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.bgDefault};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,18 +18,18 @@ const Title = styled.div`
   width: 60%;
   font-size: 40px;
   font-weight: bold;
-  color: darkblue;
+  color: ${(props) => props.theme.colors.primary};
   text-align: center;
 `;
 const Description = styled.p`
   font-size: 20px;
-  color: gray;
+  color: ${(props) => props.theme.colors.textDark};
   width: 70%;
 `;
 
 const Right = styled.div`
   width: 40%;
-  background-color: white;
+  background-color: ${(props) => props.theme.colors.bgDefault};
   display: flex;
   align-items: center;
 `;
@@ -42,19 +42,19 @@ const ButtonsContainer = styled.div`
 `
 const Button = styled.button`
   font-weight: bold;
-  color: white;
-  background-color: darkblue;
+  color: ${(props) => props.theme.colors.bgDefault};
+  background-color: ${(props) => props.theme.colors.primary};
   margin-left: 5px;
   padding: 15px 30px;
   cursor: pointer;
   border: 1px solid darkblue;
   border-radius: 10px;
-  background: linear-gradient( to right, aliceblue 50%, darkblue 50%);
+  background: linear-gradient( to right, ${(props) => props.theme.colors.bgLight} 50%, ${(props) => props.theme.colors.primary} 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 0.5s ease-out;
   &:hover{
-    color: darkblue;
+    color: ${(props) => props.theme.colors.primary};
     border: 2px solid blue;
     background-position: left bottom;
     cursor: pointer;
