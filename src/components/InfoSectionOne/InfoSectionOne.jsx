@@ -4,6 +4,7 @@ import sectionOneImage from '../../images/section1.png'
 
 const Container = styled.div`
     padding: 10px 20px;
+    margin-top: 4%;
 `
 
 const Wrapper = styled.div`
@@ -65,8 +66,8 @@ function InfoSectionOne() {
     <Container>
       <Wrapper>
         <Left>
-          <Title>Subtitle</Title>
-          <Header>Header</Header>
+          <Title>Why Choose Us?</Title>
+          <Header>IT lifecycle management all in one place</Header>
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             atque adipisci saepe non distinctio aperiam ex sed nesciunt natus?
@@ -74,12 +75,12 @@ function InfoSectionOne() {
             velit cum nostrum!
           </Description>
           <List>
-            <ListItem>List Item</ListItem>
-            <ListItem>List Item</ListItem>
-            <ListItem>List Item</ListItem>
-            <ListItem>List Item</ListItem>
-            <ListItem>List Item</ListItem>
-            <ListItem>List Item</ListItem>
+            <ListItem>Transparent advice</ListItem>
+            <ListItem>Volume Building</ListItem>
+            <ListItem>Global IT sourcing</ListItem>
+            <ListItem>Internacional deliveries</ListItem>
+            <ListItem>Software refuelling</ListItem>
+            <ListItem>Nationwide service network</ListItem>
           </List>
         </Left>
 
