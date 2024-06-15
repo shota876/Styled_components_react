@@ -22,8 +22,8 @@ function InfoSectionThree() {
         </Right>
 
         <Left>
-          <Title>Why Choose Us?</Title>
-          <Header>IT lifecycle management all in one place</Header>
+          <Title>WHY TRUST US?</Title>
+          <Header>Software Asset Management (SAM) / Software Lifecycle Management</Header>
           <Description>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             atque adipisci saepe non distinctio aperiam ex sed nesciunt natus?
