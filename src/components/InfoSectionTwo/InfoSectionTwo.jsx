@@ -1,14 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import sectionImage from '../../images/laptopDark.jpg'
+import sectionImage1 from '../../images/laptopDark.jpg'
 
-const Container = styled.div`
+export const Container = styled.div`
    margin-top: 10%;
    display: flex;
    justify-content: center;
    align-items: center;
    flex-wrap: wrap;
-   background-image: url(${sectionImage});
+   height: ${({Height}) => Height};
+   background-image: url(${({sectionImage}) => sectionImage});
    background-size: cover;
    background-repeat: no-repeat;
    margin-top: 10%;
@@ -43,7 +44,7 @@ const Description = styled.p`
 function InfoSectionTwo() {
   return (
     <>
-      <Container>
+      <Container sectionImage={sectionImage1} >
         <TextWrapper>
           <Title>Anywhere Workspace!</Title>
           <Description>
