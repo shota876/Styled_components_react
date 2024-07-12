@@ -4,6 +4,13 @@ import {createGlobalStyle} from "styled-components"
 import Hero from "./components/Hero/Hero.jsx"
 import Infoboxes from "./components/infoboxes/Infoboxes.jsx"
 import { ThemeProvider } from "styled-components"
+import InfoSectionOne from "./components/InfoSectionOne/InfoSectionOne.jsx"
+import InfoSectionTwo from "./components/InfoSectionTwo/InfoSectionTwo.jsx"
+import InfoSectionThree from "./components/infoSectionThree/InfoSectionThree.jsx"
+import Teams from "./components/team/Teams.jsx"
+import InfoSectionFour from "./components/infoSectionFour/InfoSectionFour.jsx"
+import Blogs from "./components/blogs/Blogs.jsx"
+import Footer from "./components/footer/Footer.jsx"
 
 const GlobalStyles = createGlobalStyle`
   body{
@@ -57,6 +64,13 @@ function App() {
         <Navbar />
         <Hero />
         <Infoboxes />
+        <InfoSectionOne />
+        <InfoSectionTwo />
+        <InfoSectionThree /> 
+        <InfoSectionFour />
+        <Teams />
+        <Blogs />
+        <Footer />
       </Container>
     </ThemeProvider>
   )

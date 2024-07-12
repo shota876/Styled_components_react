@@ -8,7 +8,24 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    height: 8%;
+  }
+  //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    width: 100%;
+    height: 5%;
+  }
+  //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    width: 100%;
+    height: 10%;
+  }
 `;
+
 const Logo = styled.h1`
   font-size: 20px;
   text-decoration: underline;
@@ -30,6 +47,15 @@ const MenuItem = styled.li`
   &:hover {
     color: ${(props) => props.theme.colors.primary};
   }
+
+  @media only screen and (min-width: 600px) {
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  @media only screen and (min-width: 992px) {
+    margin-right: 30px;
+    font-size: 20px;
+  }
 `;
 
 const Button = styled.button`
@@ -45,6 +71,13 @@ const Button = styled.button`
     color: ${(props) => props.theme.colors.primary};
     border: 2px solid darkblue;
   }
+
+  @media only screen and (min-width: 600px) {
+    padding: 8px 15px;
+  }
+  @media only screen and (min-width: 992px) {
+    padding: 10px 20px;
+  }
 `
 
 const Left = styled.div`
@@ -56,6 +89,19 @@ const Left = styled.div`
 const Center = styled.div`
   display: flex;
   flex: 2;
+
+  //for Mobiles
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+  //for Tablets and Medium Screens
+  @media only screen and (min-width: 600px) {
+    display: flex;
+  }
+  //for laptops and desktops
+  @media only screen and (min-width: 992px) {
+    display: flex;
+  }
 `;
 const Right = styled.div`
   flex: 1;
